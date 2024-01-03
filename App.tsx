@@ -8,7 +8,9 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
-      <Button title="get wallet info" onPress={portkey.login} />
+      <Button title="get wallet info" onPress={() => {
+        portkey.login()
+      }} />
     </View>
   );
 }
