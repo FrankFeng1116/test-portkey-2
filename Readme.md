@@ -1,7 +1,8 @@
 # run mock server
 
 1. cd mock-server-2
-2. yarn start
+2. yarn (install dependencies)
+3. yarn start
 
 # run demo app
 
