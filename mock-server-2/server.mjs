@@ -18,13 +18,13 @@ app.get("/api/get-something", (req, res) => {
   console.log(req.cookies.session);
 
   if (!req.cookies.session) {
-    res.status(403).send({
+    return res.status(403).send({
       success: false,
       description: "Unauthorized",
     });
   }
 
-  res.send({
+  return res.send({
     success: true,
     description: "success",
   });
